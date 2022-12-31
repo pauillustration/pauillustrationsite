@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'Handwriting';
+    src: url(fonts/Handwriting-Regular.ttf) format('truetype'),
+        url(fonts/Handwriting-Regular.woff) format('woff'),
+        url(fonts/Handwriting-Regular.woff2) format('woff2'),
+        url(fonts/Handwriting-Regular.eot) format('eot'),
+        url(fonts/Handwriting-Regular.otf) format('opentype');
+    font-weight: regular;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Handwriting', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Handwriting', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+body {
+    font-family: 'Handwriting', sans-serif;
+    font-size: 1.25rem;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+body::-webkit-scrollbar-thumb {
+    background: #fb009e;
+}
+
+/* Skeleton */
+
+.wrapper {
+    display:flex;
+}
+.menu {
+    width: 27.5%;
+    max-width: 500px;
+    height: 100%;
+    padding-left: 20px;
+}
+.about {
+    width: 72.5%;
+    padding: 35px;
+    height: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+    position: fixed;
+    background-color: #ffffff;
+    width:25%;
+    max-width: 500px;
+    height: 100vw;
+}
+
+.navbar ul li a{
+    color: #313131;
+}
+
+.navbar ul li:hover a{
+    transition: 0.4s ease-in-out;
+    color: #fb009e;
+}
+
+.navbar-item-container {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+
+.logo img{
+    align-self: center;
+    max-width: 100%;
+    max-height: auto;
+    width: auto\9;
+    padding-top: 5%;
+}
+
+.navbar-nav-menu ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 999;   
+}  
+
+.navbar-nav-menu {
+   text-align: center;
+}
+
+.link-text {
+    margin-left: 0.5rem;
+}
+
+.nav-button-container {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+.nav-item:hover {
+    transition: .4s ease-in-out;
+    transform: scale(115%);
+}
+
+.nav-button-item {
+    font-size: 2rem;
+}
+.nav-button-item:hover {
+    transition: .4s ease-in-out;
+    transform: scale(115%);
+}
+
+/*About*/
+.about img{
+    height: auto;
+    width: 40%;
+}
+.text{
+    width: 60%;
+    padding: 50px;
+}
+.text h1{
+    margin-bottom: 10px;
+}
+.text h2{
+    color: #3183a4;
+    margin-bottom: 30px;
+}
+
+.text p{
+    letter-spacing: 0.75px;
+    line-height: 25px;
+}
+
+.text span{
+    color: #fb009e;
+}
+.container { 
+    width: 95%;
+    height: 100%;
+    margin-top: 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Responsive */
+
+@media screen and (min-width:1000px){
+    .nav-item-home {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .menu {
+        width: 15%;
+        padding-left: 15px;
+        height: 100%;
+    }
+    .about {
+        padding: 20px;
+    }
+    .link-text {
+        display: none;
+    }
+    .navbar {
+        width:15%;
+        height:100%;
+        position: fixed;
+        background: #ffffff;
+        margin-top: 60px;
+   }
+    
+    .navbar-nav-menu {
+        align-items: center;
+    }
+    .nav-button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        bottom: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo-container {
+        display:none;
+    }
+    .container { 
+        width: 95%;
+        height: 100%;
+        margin-top: 7.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .nav-button-item {
+        font-size: 1.5rem;
+        align-self: center;
+    }
+}
